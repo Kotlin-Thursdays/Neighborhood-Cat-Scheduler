@@ -4,7 +4,7 @@ import com.example.demo.model.CatScheduleScope
 import javafx.scene.control.TextField
 import tornadofx.*
 
-class Editor: View() {
+class Editor: Fragment() {
 
     // cast scope
     override val scope = super.scope as CatScheduleScope
