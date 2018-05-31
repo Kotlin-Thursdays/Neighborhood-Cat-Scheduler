@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44b76b6b-7bea-47d8-b04b-3e5901bbf267" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controller/BottomViewController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controller/BottomViewController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/CatSchedule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/CatSchedule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/BottomView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/BottomView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/Editor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/Editor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controller/EditorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatSchedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$address$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$address$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$catImage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$catImage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$catName$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$catName$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$ownerName$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$ownerName$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$time$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel$time$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleScope.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/CatScheduleScope.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/BottomView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/BottomView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor$root$1$1$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor$root$1$1$1$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor$root$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor$root$1$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor$root$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor$root$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor$root$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/Editor.class" afterDir="false" />
-    </list>
+    <list default="true" id="44b76b6b-7bea-47d8-b04b-3e5901bbf267" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,14 +27,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Editor.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Editor.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/Editor.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="155">
+              <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
               <folding>
-                <element signature="e#31#181#0" expanded="true" />
+                <element signature="e#31#134#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -99,9 +87,10 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/CatScheduleEditor.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controller/EditorController.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controller/BottomViewController.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/Editor.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/CatSchedule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/BottomView.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/Editor.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/.gitignore" />
       </list>
     </option>
   </component>
@@ -655,11 +644,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/Editor.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="155">
+          <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
           <folding>
-            <element signature="e#31#181#0" expanded="true" />
+            <element signature="e#31#134#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
