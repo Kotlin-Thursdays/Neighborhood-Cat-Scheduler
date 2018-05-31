@@ -33,9 +33,11 @@ class Editor: Fragment() {
                         timeField = this
                     }
                 }
-                button("Save").action {
+                button("Save") {
                     enableWhen(model.dirty)
-                    save()
+                    action {
+                        save()
+                    }
                 }
             }
         }
@@ -48,6 +50,7 @@ class Editor: Fragment() {
         // edited cat schedule is contained in the model
         val catSchedule = model.item
         println("Saving Changes: ${catSchedule.ownerName} / ${catSchedule.catName} / ${catSchedule.time}")
+        close()
     }
 
 }

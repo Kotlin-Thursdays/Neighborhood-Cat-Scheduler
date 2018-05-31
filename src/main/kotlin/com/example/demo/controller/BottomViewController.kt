@@ -2,6 +2,9 @@ package com.example.demo.controller
 
 import com.example.demo.model.CatSchedule
 import com.example.demo.model.CatScheduleModel
+import com.example.demo.model.CatScheduleScope
+import com.example.demo.view.BottomView
+import com.example.demo.view.Editor
 import tornadofx.*
 import java.text.DateFormat
 import java.time.LocalDate
@@ -50,4 +53,21 @@ class BottomViewController: Controller() {
             CatSchedule("Tucker Harrison", "Princess", "2267 8th Street", "8:00PM", "/kitty/kitty5.png")
     ).observable()
 
+    fun changeCatAvi(catSchedule: CatSchedule) {
+
+    }
+
+    fun editCatSchedule(catSchedule: CatSchedule) {
+        val catScheduleScope = CatScheduleScope()
+        catScheduleScope.model.item = catSchedule
+        find(Editor::class, scope = catScheduleScope).openModal()
+    }
+
+    init {
+        subscribe<BottomView.CatScheduleRequest> {
+
+        }
+    }
 }
+
+class CatScheduleEvent(val catSchedules: List<CatSchedule>): FXEvent()

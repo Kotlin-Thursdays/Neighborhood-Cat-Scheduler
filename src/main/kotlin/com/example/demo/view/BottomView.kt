@@ -4,7 +4,6 @@ import com.example.demo.app.Styles
 import com.example.demo.controller.BottomViewController
 import com.example.demo.model.CatSchedule
 import com.example.demo.model.CatScheduleModel
-import com.example.demo.model.CatScheduleScope
 import javafx.scene.paint.Color
 import tornadofx.*
 
@@ -12,6 +11,8 @@ class BottomView: View() {
 
     private val controller: BottomViewController by inject()
     private val model: CatScheduleModel by inject()
+    object CatScheduleRequest : FXEvent(EventBus.RunOn.BackgroundThread)
+
     private var cat: String = "/kitty/kitty1.png"
     private var weekdays = listOf(
             Pair("Monday", controller.mondays),
@@ -26,14 +27,15 @@ class BottomView: View() {
             weekdays.forEach {
                 tab(it.first) {
                     tableview(it.second) {
-                        column("Owner", CatSchedule::ownerName)
-                        column("Cat", CatSchedule::catName)
-                        column("Address", CatSchedule::address).remainingWidth()
-                        column("Time", CatSchedule::time)
+                        column("Owner", CatSchedule::ownerNameProperty)
+                        column("Cat", CatSchedule::catNameProperty)
+                        column("Address", CatSchedule::addressProperty).remainingWidth()
+                        column("Time", CatSchedule::timeProperty)
                         bindSelected(model)
                         smartResize()
 
-                        onUserSelect { editCatSchedule(it) }
+                        onUserSelect(1) { controller.changeCatAvi(it) }
+                        onUserSelect(2) { controller.editCatSchedule(it) }
                     }
                 }
             }
@@ -49,12 +51,6 @@ class BottomView: View() {
             }
             imageview(cat, true)
         }
-    }
-
-    private fun editCatSchedule(catSchedule: CatSchedule) {
-        val catScheduleScope = CatScheduleScope()
-        catScheduleScope.model.item = catSchedule
-        openInternalWindow(Editor::class, scope = catScheduleScope)
     }
 
 }
