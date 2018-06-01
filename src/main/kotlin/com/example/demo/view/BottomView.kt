@@ -4,6 +4,7 @@ import com.example.demo.app.Styles
 import com.example.demo.controller.BottomViewController
 import com.example.demo.model.CatSchedule
 import com.example.demo.model.CatScheduleModel
+import javafx.scene.layout.StackPane
 import javafx.scene.paint.Color
 import tornadofx.*
 
@@ -13,7 +14,7 @@ class BottomView: View() {
     private val model: CatScheduleModel by inject()
     object CatScheduleRequest : FXEvent(EventBus.RunOn.BackgroundThread)
 
-    private var cat: String = "/kitty/kitty1.png"
+    lateinit var avi: StackPane
     private var weekdays = listOf(
             Pair("Monday", controller.mondays),
             Pair("Tuesday", controller.tuesdays),
@@ -43,14 +44,13 @@ class BottomView: View() {
             addClass(Styles.schedule)
         }
 
-        stackpane {
+        avi = stackpane {
             rectangle {
                 width = 200.0
                 height = 200.0
                 fill = Color.TRANSPARENT
             }
-            imageview(cat, true)
+            imageview("/kitty/kitty1.png", true)
         }
     }
-
 }

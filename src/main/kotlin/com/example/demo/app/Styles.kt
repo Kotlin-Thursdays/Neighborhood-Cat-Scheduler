@@ -11,6 +11,7 @@ class Styles : Stylesheet() {
         val street by cssclass()
         val schedule by cssclass()
         val catPicture by cssclass()
+        val transparentOverlay by cssclass()
     }
 
     init {
@@ -42,6 +43,10 @@ class Styles : Stylesheet() {
         catPicture {
             prefWidth = 200.px
             prefHeight = 100.px
+        }
+
+        transparentOverlay {
+            backgroundColor += c(0, 100, 100, 0.05)
         }
     }
 }

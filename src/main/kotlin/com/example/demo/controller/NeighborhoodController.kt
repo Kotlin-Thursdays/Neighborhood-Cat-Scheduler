@@ -1,14 +1,20 @@
 package com.example.demo.controller
 
+import com.example.demo.view.NeighborhoodView
 import javafx.geometry.Pos
+import javafx.scene.image.ImageView
 import javafx.scene.layout.StackPane
 import tornadofx.*
 import java.util.*
 
 class NeighborhoodController: Controller() {
 
+    private val view: NeighborhoodView by inject()
+
     fun housePane(position: Pos): StackPane {
         val houseNum = (1..6).random()
+
+        //view.root.children[1].add(ImageView("speech_bubble1.png"))
 
         return StackPane().apply {
             rectangle {

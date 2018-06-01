@@ -5,6 +5,9 @@ import com.example.demo.model.CatScheduleModel
 import com.example.demo.model.CatScheduleScope
 import com.example.demo.view.BottomView
 import com.example.demo.view.Editor
+import javafx.scene.image.ImageView
+import javafx.scene.paint.Color
+import javafx.scene.shape.Rectangle
 import tornadofx.*
 import java.text.DateFormat
 import java.time.LocalDate
@@ -12,6 +15,8 @@ import java.time.temporal.WeekFields
 import java.util.*
 
 class BottomViewController: Controller() {
+
+    private val view: BottomView by inject()
 
     val mondays = listOf(
             CatSchedule("Tom Mariano", "Meowsers", "1110 6th Street", "3:00PM", "/kitty/kitty1.png"),
@@ -54,7 +59,10 @@ class BottomViewController: Controller() {
     ).observable()
 
     fun changeCatAvi(catSchedule: CatSchedule) {
-
+        view.avi.children.clear()
+        val rectangle = Rectangle(200.0, 200.0 , Color.TRANSPARENT)
+        val image = ImageView(catSchedule.catImage)
+        view.avi.children.addAll(rectangle, image)
     }
 
     fun editCatSchedule(catSchedule: CatSchedule) {
