@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.testfx:testfx-junit:4.0.13-alpha">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/testfx/testfx-junit/4.0.13-alpha/testfx-junit-4.0.13-alpha.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/testfx/testfx-junit/4.0.13-alpha/testfx-junit-4.0.13-alpha-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/testfx/testfx-junit/4.0.13-alpha/testfx-junit-4.0.13-alpha-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
