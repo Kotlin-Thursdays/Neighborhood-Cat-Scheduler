@@ -14,7 +14,8 @@ open class TornadoFxTest : ApplicationTest() {
         stage.show()
     }
 
-    protected inline fun <reified T : UIComponent> showViewWithParams(params: Map<*, Any?>?) = wrapper.addViewWithParams<T>(params)
+    protected inline fun <reified T : UIComponent> showViewWithParams(params: Map<*, Any?>?) =
+            wrapper.addViewWithParams<T>(params)
 
     class TestView : View() {
         override val root = stackpane { }

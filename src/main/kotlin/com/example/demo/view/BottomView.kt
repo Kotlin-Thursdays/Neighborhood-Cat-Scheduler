@@ -7,6 +7,7 @@ import com.example.demo.model.CatScheduleModel
 import javafx.scene.layout.StackPane
 import javafx.scene.paint.Color
 import tornadofx.*
+import tornadofx.Stylesheet.Companion.tab
 
 class BottomView: View() {
 

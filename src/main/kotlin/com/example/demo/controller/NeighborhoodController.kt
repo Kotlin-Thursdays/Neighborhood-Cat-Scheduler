@@ -2,7 +2,6 @@ package com.example.demo.controller
 
 import com.example.demo.view.NeighborhoodView
 import javafx.geometry.Pos
-import javafx.scene.image.ImageView
 import javafx.scene.layout.StackPane
 import tornadofx.*
 import java.util.*

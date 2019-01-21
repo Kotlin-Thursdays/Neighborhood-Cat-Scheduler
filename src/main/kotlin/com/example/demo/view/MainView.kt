@@ -12,4 +12,5 @@ class MainView : View("Neighborhood Cat Scheduler") {
             left(BottomView::class)
             addClass(Styles.main)
     }
+
 }
