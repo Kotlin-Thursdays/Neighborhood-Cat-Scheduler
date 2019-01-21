@@ -1,6 +1,10 @@
 # Neighborhood-Cat-Scheduler
 Learn Kotlin with introductory TornadoFX project.
 
+See the tutorial below!
+ - [KotlinTown: Introduction to TornadoFX Part 1](https://www.codetown.com/group/kotlin/forum/topics/kotlin-tuesdays-introduction-to-tornadofx-part-1)
+ - [KotlinTown: Introduction to TornadoFX Part 2](https://www.codetown.com/group/kotlin/forum/topics/kotlin-thursdays-introduction-to-tornadofx-part-2)
+
 ![altext](https://github.com/Kotlin-Thursdays/Neighborhood-Cat-Scheduler/blob/master/cat_scheduler.png)
 
 ## Topics Covered
