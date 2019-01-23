@@ -69,6 +69,7 @@ class BottomViewController: Controller() {
                 width = 200.0
                 height = 200.0
                 fill = c("#AARRGGBB")
+                opacity = 0.01
             }
             imageview(catSchedule.catImage)
         }

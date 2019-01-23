@@ -1,4 +1,3 @@
-import com.example.demo.model.CatScheduleModel
 import com.example.demo.model.CatScheduleScope
 import com.example.demo.view.Editor
 import javafx.scene.Node
@@ -10,34 +9,53 @@ import kotlin.reflect.KClass
 import javafx.scene.Parent
 import javafx.scene.Scene
 import javafx.stage.Stage
-import org.junit.Assert
+import junit.framework.Assert.*
+import org.junit.Before
 import org.testfx.api.FxAssert.verifyThat
 import org.testfx.api.FxToolkit
 import org.testfx.framework.junit.ApplicationTest
-import org.testfx.matcher.control.TextInputControlMatchers.hasText
 
 data class Control(val type: KClass<out Node>, // put in uiNodeType here
                    val id: String,
                    val isAssigned: Boolean = false)
 
+class TestView: View() {
+    override val root = vbox()
+}
+
 class Test: ApplicationTest() {
 
-    /*override fun start(stage: Stage?) {
-        setInScope(CatScheduleModel(), CatScheduleScope())
-        val sceneRoot = view
-        addAllIdsToDescendents(sceneRoot.root)
-        stage?.scene = Scene(sceneRoot.root, 100.0, 100.0)
-        stage?.show()
-    }*/
+    lateinit var primaryStage: Stage
+    val view = TestView()
 
-    val primaryStage = FxToolkit.registerPrimaryStage()
+    private lateinit var textfield: TextField
+    private lateinit var button: Button
+
+    @Before
+    fun setUpFx() {
+        primaryStage = FxToolkit.registerPrimaryStage()
+        val fragment = find<Editor>(CatScheduleScope())
+
+        view.root.add(fragment.root)
+
+        addAllIdsToDescendents(view.root)
+
+        interact {
+            primaryStage.scene = Scene(view.root)
+            primaryStage.show()
+            primaryStage.toFront()
+
+            textfield = from(view.root).lookup("#beep").query()
+            button = from(view.root).lookup("#derp").query()
+        }
+    }
 
     private val listOfControls = listOf(
-            Control(Form::class,"#peep"),
-            Control(TextField::class,"#beep"),
-            Control(TextField::class,"#boop"),
-            Control(TextField::class, "#bop"),
-            Control(Button::class,"#derp")
+            Control(Form::class,"peep"),
+            Control(TextField::class,"beep"),
+            Control(TextField::class,"boop"),
+            Control(TextField::class, "bop"),
+            Control(Button::class,"derp")
     )
 
 
@@ -62,18 +80,17 @@ class Test: ApplicationTest() {
     }
 
     @Test fun testTextfield() {
-        // use this to save the label
-        val fragment = find<Editor>(CatScheduleScope())
-        addAllIdsToDescendents(fragment.root)
-        clickOn(lookup("#beep")).write("Something")
-        verifyThat("#beep", hasText("Something"))
-        // Assert.assertTrue(view.scope.model.isDirty)
+        clickOn(textfield).write("Something")
+
+        assertEquals("Something", textfield.text)
     }
 
     @Test fun testButton() {
-        val button = lookup("#derp") as Button
-        clickOn("#derp")
-        // verifyThat(view, view.)
+        assertTrue(button.isDisabled)
+        clickOn(textfield).write("Something")
+
+        assertTrue(!button.isDisabled)
+        clickOn(button)
     }
 
 }
